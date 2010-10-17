@@ -1,0 +1,2 @@
+package warmupdaterapp.customTypes;
+parcelable FullUpdateInfo;
