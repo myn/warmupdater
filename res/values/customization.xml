@@ -12,7 +12,7 @@
 	<!-- Config Strings -->
 	<string name="conf_update_server_url_def">http://github.com/myn/warmupdater-manifest/raw/master/WarmTwoPointTwo/update_file.json</string>
 	<string name="conf_theme_version_file_def">/system/framework/themes.theme</string>
-	<string name="conf_changelog_url">http://cyanogen-updater.googlecode.com/files/changelog.xml</string>
+	<string name="conf_changelog_url">http://github.com/myn/warmupdater-manifest/raw/master/WarmTwoPointTwo/changelog.xml</string>
 	<string name="conf_featured_themes_url">http://github.com/myn/warmupdater-manifest/raw/master/WarmTwoPointTwo/FeaturedThemes.xml</string>
 
 	<!-- About dialog -->
