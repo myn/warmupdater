@@ -86,7 +86,9 @@ public class ApplyUpdateActivity extends Activity {
                                         os.write("echo 'boot-recovery' >/cache/recovery/command\n".getBytes());
                                         if (mBackup)
                                             os.write("echo '--nandroid'  >> /cache/recovery/command\n".getBytes());
-                                        String cmd = "echo '--update_package=SDCARD:" + mUpdateFolder + "/" + mUpdateInfo.getFileName() + "' >> /cache/recovery/command\n";
+                                        //String cmd = "echo '--update_package=SDCARD:" + mUpdateFolder + "/" + mUpdateInfo.getFileName() + "' >> /cache/recovery/command\n";
+                                        // SDCARD:updatefile.zip was old recovery method.  New way is /sdcard/updatefile.zip.  Thanks Koush
+                                        String cmd = "echo '--update_package=/sdcard/" + mUpdateFolder + "/" + mUpdateInfo.getFileName() + "' >> /cache/recovery/command\n";
                                         os.write(cmd.getBytes());
                                         os.write("reboot recovery\n".getBytes());
                                         os.flush();
